@@ -60,7 +60,7 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
         }
       ]
       scale: {
-        minReplicas: minReplicas
+        minReplicas: 1
         maxReplicas: 1
       }
     }
