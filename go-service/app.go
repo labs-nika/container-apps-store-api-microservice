@@ -60,6 +60,7 @@ func (a *App) GetInventory(w http.ResponseWriter, r *http.Request) {
 		Data:      data,        // 要存储的数据
 		Metadata: map[string]string{
 			"blobName": timePrefix + "-inventory-item-" + productID, // Blob 的名称，包含时间戳前缀和产品ID
+			"key":      timePrefix + "-inventory-item-" + productID,
 		},
 	})
 	if err != nil {
